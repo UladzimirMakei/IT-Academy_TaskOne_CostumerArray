@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ActionSuite">
+    <test name="actionTest">
+        <classes>
+            <class name="by.uladzimirmakei.taskone.action.SearchAverageTest"/>
+            <class name="by.uladzimirmakei.taskone.action.SearchMaxTest"/>
+            <class name="by.uladzimirmakei.taskone.action.SearchMinTest"/>
+            <class name="by.uladzimirmakei.taskone.action.SummarizeArrayTest"/>
+            <class name="by.uladzimirmakei.taskone.action.SummarizePositiveTest"/>
+            <class name="by.uladzimirmakei.taskone.action.SummarizeNegativeTest"/>
+        </classes>
+    </test>
+</suite>
