@@ -3,6 +3,8 @@ package by.uladzimirmakei.taskone.util;
 import by.uladzimirmakei.taskone.entity.CostumerArray;
 
 public class ArrayUtil {
+    private ArrayUtil() {
+    }
 
     public static boolean isIndexValid(int[] array, int index) {
         return (0 <= index && index < array.length);

@@ -1,14 +1,12 @@
 package by.uladzimirmakei.taskone.listener.impl;
 
-import by.uladzimirmakei.taskone.action.impl.SearchActionImpl;
 import by.uladzimirmakei.taskone.action.impl.SummarizeActionImpl;
+import by.uladzimirmakei.taskone.entity.CostumerArray;
 import by.uladzimirmakei.taskone.entity.MathParams;
 import by.uladzimirmakei.taskone.entity.Warehouse;
 import by.uladzimirmakei.taskone.listener.WarehouseObserver;
-import by.uladzimirmakei.taskone.entity.CostumerArray;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
-
 import org.apache.logging.log4j.Logger;
 
 public class WarehouseObserverImp implements WarehouseObserver<CostumerArray> {

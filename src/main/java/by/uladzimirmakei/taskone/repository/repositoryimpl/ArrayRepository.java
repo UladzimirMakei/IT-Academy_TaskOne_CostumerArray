@@ -63,7 +63,7 @@ public class ArrayRepository implements Repository<CostumerArray> {
     }
 
     @Override
-    public void sort(Comparator comparator) {
+    public void sort(Comparator<CostumerArray> comparator) {
         storage.sort(comparator);
     }
 

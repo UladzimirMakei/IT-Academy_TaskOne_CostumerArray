@@ -1,5 +1,6 @@
 package by.uladzimirmakei.taskone.repository;
 
+import by.uladzimirmakei.taskone.entity.CostumerArray;
 import by.uladzimirmakei.taskone.exception.RepositoryException;
 
 import java.util.Comparator;
@@ -13,7 +14,7 @@ public interface Repository<T> {
 
     List<T> query(Specification specification);
 
-    void sort(Comparator comparator);
+    void sort(Comparator<CostumerArray> comparator);
 
     void add(T object);
 
