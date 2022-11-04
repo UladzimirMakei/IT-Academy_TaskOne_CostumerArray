@@ -1,4 +1,4 @@
-package by.uladzimirmakei.taskone.showroom;
+package by.uladzimirmakei.taskone;
 
 import by.uladzimirmakei.taskone.creator.impl.RepositoryFromListCreator;
 import by.uladzimirmakei.taskone.entity.CostumerArray;
