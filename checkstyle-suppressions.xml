@@ -6,4 +6,5 @@
 <suppressions>
   <suppress checks="Javadoc" files="."/>
   <suppress checks="FinalParameters" files="."/>
+  <suppress checks="HiddenField" files="."/>
 </suppressions>
