@@ -1,8 +1,7 @@
-package by.uladzimirmakei.taskone.service.reader.impl;
+package by.uladzimirmakei.taskone.service.validator.impl;
 
 import by.uladzimirmakei.taskone.repository.exception.ListException;
-import by.uladzimirmakei.taskone.service.reader.ListReaderAction;
-import by.uladzimirmakei.taskone.service.validator.impl.StringValidatorImpl;
+import by.uladzimirmakei.taskone.service.validator.ListValidatorAction;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,7 +9,8 @@ import org.apache.logging.log4j.Logger;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class ListReaderActionImpl implements ListReaderAction<List<String>> {
+public class ListValidatorActionImpl implements
+        ListValidatorAction<List<String>> {
     private static Logger logger = LogManager.getLogger();
 
     @Override

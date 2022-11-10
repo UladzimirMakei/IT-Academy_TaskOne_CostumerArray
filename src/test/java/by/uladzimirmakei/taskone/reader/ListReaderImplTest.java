@@ -1,7 +1,7 @@
 package by.uladzimirmakei.taskone.reader;
 
 import by.uladzimirmakei.taskone.repository.exception.ListException;
-import by.uladzimirmakei.taskone.service.reader.impl.ListReaderActionImpl;
+import by.uladzimirmakei.taskone.service.validator.impl.ListValidatorActionImpl;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -11,7 +11,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class ListReaderImplTest {
-    private static ListReaderActionImpl reader = new ListReaderActionImpl();
+    private static ListValidatorActionImpl reader = new ListValidatorActionImpl();
     private static List<String> testList = new ArrayList<>();
     private static List<String> resultList = new ArrayList<>();
 

@@ -1,7 +1,7 @@
-package by.uladzimirmakei.taskone.service.reader;
+package by.uladzimirmakei.taskone.service.validator;
 
 import by.uladzimirmakei.taskone.repository.exception.ListException;
 
-public interface ListReaderAction<T> {
+public interface ListValidatorAction<T> {
     T read(T inputData) throws ListException;
 }

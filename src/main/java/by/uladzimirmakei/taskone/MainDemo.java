@@ -3,6 +3,7 @@ package by.uladzimirmakei.taskone;
 import by.uladzimirmakei.taskone.repository.entity.CostumerArray;
 import by.uladzimirmakei.taskone.repository.entity.Warehouse;
 import by.uladzimirmakei.taskone.repository.exception.ArrayException;
+import by.uladzimirmakei.taskone.repository.exception.ArrayReaderException;
 import by.uladzimirmakei.taskone.repository.exception.FileException;
 import by.uladzimirmakei.taskone.repository.exception.ListException;
 import by.uladzimirmakei.taskone.repository.repositoryimpl.ArrayRepository;
@@ -48,6 +49,8 @@ public class MainDemo {
         } catch (ListException e) {
             logger.log(Level.ERROR, "Unable to create repository from list: {}",
                     e.getMessage());
+        } catch (ArrayReaderException e) {
+            throw new RuntimeException(e);
         }
         logger.log(Level.DEBUG, "End of program");
     }
