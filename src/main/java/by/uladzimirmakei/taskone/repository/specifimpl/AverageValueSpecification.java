@@ -1,7 +1,6 @@
 package by.uladzimirmakei.taskone.repository.specifimpl;
 
-import by.uladzimirmakei.taskone.entity.CostumerArray;
-import by.uladzimirmakei.taskone.repository.Specification;
+import by.uladzimirmakei.taskone.repository.entity.CostumerArray;
 
 import java.util.Arrays;
 
@@ -14,6 +13,9 @@ public class AverageValueSpecification implements Specification {
 
     @Override
     public boolean specify(CostumerArray array) {
-        return (averageValue < Arrays.stream(array.getArray()).average().getAsDouble());
+        return (averageValue < Arrays.stream(array
+                        .getArray())
+                .average()
+                .getAsDouble());
     }
 }

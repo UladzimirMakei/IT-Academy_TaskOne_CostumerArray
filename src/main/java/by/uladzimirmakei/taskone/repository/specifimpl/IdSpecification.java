@@ -1,7 +1,6 @@
 package by.uladzimirmakei.taskone.repository.specifimpl;
 
-import by.uladzimirmakei.taskone.entity.CostumerArray;
-import by.uladzimirmakei.taskone.repository.Specification;
+import by.uladzimirmakei.taskone.repository.entity.CostumerArray;
 
 public class IdSpecification implements Specification {
     private long id;

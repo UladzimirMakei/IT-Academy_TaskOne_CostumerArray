@@ -1,6 +1,7 @@
 package by.uladzimirmakei.taskone.util;
 
-import by.uladzimirmakei.taskone.entity.CostumerArray;
+import by.uladzimirmakei.taskone.repository.entity.CostumerArray;
+import by.uladzimirmakei.taskone.service.util.ArrayUtil;
 import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

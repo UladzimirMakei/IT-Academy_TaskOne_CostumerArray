@@ -1,5 +1,6 @@
 package by.uladzimirmakei.taskone.util;
 
+import by.uladzimirmakei.taskone.service.util.GeneratorId;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 

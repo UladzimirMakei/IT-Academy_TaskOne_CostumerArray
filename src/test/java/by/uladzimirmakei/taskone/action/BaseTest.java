@@ -1,10 +1,10 @@
 package by.uladzimirmakei.taskone.action;
 
-import by.uladzimirmakei.taskone.action.impl.SearchActionImpl;
-import by.uladzimirmakei.taskone.action.impl.ChangeActionImpl;
-import by.uladzimirmakei.taskone.action.impl.SummarizeActionImpl;
-import by.uladzimirmakei.taskone.entity.CostumerArray;
-import by.uladzimirmakei.taskone.exception.ArrayException;
+import by.uladzimirmakei.taskone.service.action.impl.SearchActionImpl;
+import by.uladzimirmakei.taskone.service.action.impl.ChangeActionImpl;
+import by.uladzimirmakei.taskone.service.action.impl.SummarizeActionImpl;
+import by.uladzimirmakei.taskone.repository.entity.CostumerArray;
+import by.uladzimirmakei.taskone.repository.exception.ArrayException;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

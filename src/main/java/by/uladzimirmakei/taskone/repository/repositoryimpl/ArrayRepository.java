@@ -1,9 +1,8 @@
 package by.uladzimirmakei.taskone.repository.repositoryimpl;
 
-import by.uladzimirmakei.taskone.repository.Repository;
-import by.uladzimirmakei.taskone.entity.CostumerArray;
-import by.uladzimirmakei.taskone.exception.RepositoryException;
-import by.uladzimirmakei.taskone.repository.Specification;
+import by.uladzimirmakei.taskone.repository.entity.CostumerArray;
+import by.uladzimirmakei.taskone.repository.exception.RepositoryException;
+import by.uladzimirmakei.taskone.repository.specifimpl.Specification;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -13,17 +12,17 @@ public class ArrayRepository implements Repository<CostumerArray> {
 
     private List<CostumerArray> storage;
 
-
     private ArrayRepository() {
         storage = new ArrayList<>();
     }
 
     private static class ArrayRepositoryHolder {
-        private static final ArrayRepository arrayRepository = new ArrayRepository();
+        private static final ArrayRepository ARRAY_REPOSITORY
+                = new ArrayRepository();
     }
 
     public static ArrayRepository getInstance() {
-        return ArrayRepositoryHolder.arrayRepository;
+        return ArrayRepositoryHolder.ARRAY_REPOSITORY;
     }
 
     @Override
@@ -42,7 +41,8 @@ public class ArrayRepository implements Repository<CostumerArray> {
     }
 
     @Override
-    public void update(CostumerArray oldArray, CostumerArray newArray) throws RepositoryException {
+    public void update(CostumerArray oldArray, CostumerArray newArray)
+            throws RepositoryException {
         if (storage.contains(oldArray)) {
             int oldArrayIndex = storage.indexOf(oldArray);
             storage.set(oldArrayIndex, newArray);

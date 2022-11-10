@@ -1,6 +1,6 @@
 package by.uladzimirmakei.taskone.parser;
 
-import by.uladzimirmakei.taskone.parser.impl.ArrayParserImpl;
+import by.uladzimirmakei.taskone.service.parser.impl.ArrayParserImpl;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 

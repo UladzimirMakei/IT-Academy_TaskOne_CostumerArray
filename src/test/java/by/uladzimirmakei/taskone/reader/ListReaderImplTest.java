@@ -1,7 +1,7 @@
 package by.uladzimirmakei.taskone.reader;
 
-import by.uladzimirmakei.taskone.exception.ListException;
-import by.uladzimirmakei.taskone.reader.impl.ListReaderActionImpl;
+import by.uladzimirmakei.taskone.repository.exception.ListException;
+import by.uladzimirmakei.taskone.service.reader.impl.ListReaderActionImpl;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
