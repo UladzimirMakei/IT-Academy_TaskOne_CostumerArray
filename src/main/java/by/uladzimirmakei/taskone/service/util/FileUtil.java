@@ -22,8 +22,8 @@ public class FileUtil {
 
     public static List<String> readFromFile()
             throws FileException, ArrayReaderException {
-        ReaderFactory factory = new ReaderFactory();
-        ReaderAction<List<String>> reader = factory.getReader(ReaderType.FILE);
+        ReaderAction<List<String>> reader =
+                ReaderFactory.createReader(ReaderType.FILE);
         return reader.read();
     }
 

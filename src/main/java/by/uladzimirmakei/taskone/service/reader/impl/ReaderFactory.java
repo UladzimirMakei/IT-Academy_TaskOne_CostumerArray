@@ -4,8 +4,10 @@ import by.uladzimirmakei.taskone.repository.exception.ArrayReaderException;
 import by.uladzimirmakei.taskone.service.reader.ReaderAction;
 
 public class ReaderFactory {
+    private ReaderFactory() {
+    }
 
-    public ReaderAction getReader(ReaderType type) throws ArrayReaderException {
+    public static ReaderAction createReader(ReaderType type) throws ArrayReaderException {
         ReaderAction toReturn;
         switch (type) {
             case FILE:
